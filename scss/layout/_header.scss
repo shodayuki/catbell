@@ -1,3 +1,142 @@
+@import "../foundation/var";
+
 .l-wrap {
   overflow-x: hidden;
+}
+
+.header {
+  height: 104px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  -webkit-transition: all .3s ease;
+  transition: all 0.3s ease;
+  top: 0;
+
+  @include mq(u-sp){
+    height: auto;
+  }
+
+  &--default {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__logo {
+    margin: 44px 0 0 56px;
+    width: 184px;
+
+    @include mq(u-sp){
+      margin: 10px 0 10px 10px;
+      width: 100px;
+    }
+  }
+
+  &__nav {
+    margin: 0 0 0 64px;
+    padding-top: 54px;
+    background-color: transparent;
+
+    @include mq(u-sp){
+      padding-top: 100px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    @include mq(u-sp){
+      display: block;
+    }
+  }
+
+  &__item {
+    margin-left: 56px;
+
+    &:first-child {
+      margin-left: 0;
+
+      @include mq(u-sp){
+        margin-left: 56px;
+      }
+    }
+
+    > a:hover {
+      color: #FF5F32;
+      text-decoration: none;
+    }
+  }
+}
+
+/* -------------------------------------------
+setting
+---------------------------------------------- */
+.drawer-menu-item {
+  font-size: 14px !important;
+
+  @include mq(u-sp){
+    padding: 2.75rem 0.75rem !important;
+  }
+}
+
+.drawer-hamburger {
+  padding: 18px 1.75rem 30px !important;
+
+  @include mq(o-sp){
+    display: none !important;
+  }
+}
+
+.drawer--right .drawer-nav {
+  @include mq(u-sp){
+    right: -80% !important;
+    background-color: transparent !important;
+  }
+
+  @include mq(o-sp){
+    left: 0 !important;
+  }
+}
+
+.drawer-nav {
+  @include mq(u-sp){
+    width: 80% !important;
+  }
+
+  @include mq(o-sp){
+    width: 100% !important;
+    position: relative !important;
+  }
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  @include mq(u-sp){
+    position: inherit !important;
+    right: 80% !important;
+  }
+}
+
+.drawer-open .drawer-overlay {
+  @include mq(u-sp){
+    background-color: rgba(255,255,255,0.98) !important;
+  }
+}
+
+.drawer--right.drawer-open .drawer-nav {
+  @include mq(u-sp){
+    right: 0 !important;
+  }
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  @include mq(u-sp){
+    right: 0 !important;
+  }
 }
