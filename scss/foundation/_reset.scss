@@ -487,3 +487,18 @@ template {
 [hidden] {
   display: none;
 }
+
+/* -------------------------------------------
+common
+---------------------------------------------- */
+html,
+body {
+  font-size: 62.5%;
+  background-color: #fafafa;
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', sans-serif;
+  color: #2c2c2c;
+}
+
+img {
+  width: 100%;
+}

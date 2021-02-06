@@ -1,5 +1,9 @@
 @import "../foundation/var";
 
+/* -------------------------------------------
+header
+---------------------------------------------- */
+
 .l-wrap {
   overflow-x: hidden;
 }
@@ -38,7 +42,7 @@
   &__nav {
     margin: 0 0 0 64px;
     padding-top: 54px;
-    background-color: transparent;
+    background-color: transparent !important;
 
     @include mq(u-sp){
       padding-top: 100px;

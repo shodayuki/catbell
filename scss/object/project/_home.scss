@@ -1,2 +1,94 @@
 @import "../../foundation/var";
 
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------
+mainVisual
+---------------------------------------------- */
+
+.mainVisual {
+  &__bgImg {
+    background: url(../../../images/home/mv.png) no-repeat;
+    background-size: contain;
+    background-position: 370px 0;
+    height: 655px;
+
+    @include mq(u-sp){
+      background-position: top center;
+      height: 500px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    padding: 0 15px;
+  }
+
+  &__wrap {
+    position: absolute;
+    top: 236px;
+    left: 130px;
+
+    @include mq(u-sp){
+      display: inline-block;
+      position: static;
+      margin-top: 150px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: #2c2c2c;
+    font-weight: bold;
+    font-size: 4.8rem;
+    letter-spacing: 2.4px;
+    line-height: calc( 72 / 48);
+
+    @include mq(u-sp){
+      font-size: 3.5rem;
+    }
+  }
+
+  &__text {
+    color: #5d5d5d;
+    font-size: 1.6rem;
+  }
+
+  &__btnArea {
+    display: block;
+
+    @include mq(u-sp){
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    padding: 16px 0;
+    width: 192px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #FF5F32;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    line-height: calc( 28 / 18 );
+    margin-right: 8px;
+    color: #fff;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include mq(u-sp){
+      width: 100%;
+    }
+  }
+}
