@@ -1,3 +1,5 @@
+@import "../../foundation/var";
+
 .u-hidden { display: none !important; }
 .u-hidden-sp {
   @include mq(u-sp) {
