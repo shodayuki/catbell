@@ -105,6 +105,7 @@ news
   }
 
   &__inner {
+    padding: 0 15px;
     position: relative;
   }
 
@@ -189,6 +190,145 @@ news
 
     @include mq(u-sp){
       padding-bottom: 6px;
+    }
+  }
+}
+
+/* -------------------------------------------
+findPet
+---------------------------------------------- */
+
+.findPet {
+  margin-top: 124px;
+
+  @include mq(u-sp){
+    margin-top: 40px;
+  }
+
+  &__inner {
+    padding: 0 15px 96px;
+  }
+
+  &__head {
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    color: #2c2c2c;
+    font-weight: 500;
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &__subTitle {
+    color: #FF5F32;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  &__wrap {
+    max-width: 880px;
+    margin: 40px auto 0;
+  }
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+
+  &__item {
+    width: 184px;
+    margin-right: 48px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    @include mq(u-sp){
+      width: calc( 50% - 10px );
+      margin-right: 0;
+      margin-top: 0;
+    }
+
+    @include mq(o-tb){
+      width: 50%;
+      margin-right: 0;
+      margin-top: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__catImg {
+    @include mq(o-tb){
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  &__catName {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2c2c2c;
+  }
+
+  &__more {
+    text-align: center;
+  }
+
+  &__moreLink {
+    background-color: #fff;
+    border: 1px solid #FF5F32;
+    color: #FF5F32;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    padding: 16px 0;
+    width: 420px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: url(../../../images/common/arrow_orange.svg) no-repeat;
+      width: 8px;
+      height: 14px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include mq(u-sp){
+      width: 100%;
     }
   }
 }

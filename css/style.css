@@ -838,6 +838,7 @@ news
 }
 
 .news__inner {
+  padding: 0 15px;
   position: relative;
 }
 
@@ -923,6 +924,146 @@ news
 @media print, screen and (max-width: 767px) {
   .news__link {
     padding-bottom: 6px;
+  }
+}
+
+/* -------------------------------------------
+findPet
+---------------------------------------------- */
+.findPet {
+  margin-top: 124px;
+}
+
+@media print, screen and (max-width: 767px) {
+  .findPet {
+    margin-top: 40px;
+  }
+}
+
+.findPet__inner {
+  padding: 0 15px 96px;
+}
+
+.findPet__head {
+  margin-bottom: 48px;
+}
+
+.findPet__title {
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 3.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.findPet__subTitle {
+  color: #FF5F32;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.findPet__wrap {
+  max-width: 880px;
+  margin: 40px auto 0;
+}
+
+.findPet__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.findPet__item {
+  width: 184px;
+  margin-right: 48px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+@media print, screen and (max-width: 767px) {
+  .findPet__item {
+    width: calc( 50% - 10px);
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media print, screen and (max-width: 979px) {
+  .findPet__item {
+    width: 50%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+.findPet__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.findPet__link {
+  display: block;
+}
+
+.findPet__link:hover {
+  opacity: 0.5;
+}
+
+@media print, screen and (max-width: 979px) {
+  .findPet__catImg {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.findPet__catName {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2c2c2c;
+}
+
+.findPet__more {
+  text-align: center;
+}
+
+.findPet__moreLink {
+  background-color: #fff;
+  border: 1px solid #FF5F32;
+  color: #FF5F32;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  padding: 16px 0;
+  width: 420px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.findPet__moreLink::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  background: url(../../../images/common/arrow_orange.svg) no-repeat;
+  width: 8px;
+  height: 14px;
+}
+
+.findPet__moreLink:hover {
+  opacity: 0.5;
+}
+
+@media print, screen and (max-width: 767px) {
+  .findPet__moreLink {
+    width: 100%;
   }
 }
 
