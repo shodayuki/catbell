@@ -646,7 +646,7 @@ blog
       margin: 0 auto;
     }
 
-    img {
+    > img {
       border-radius: 16px;
       width: 208px;
       height: 208px;
@@ -722,5 +722,102 @@ blog
     @include mq(u-sp){
       width: 100%;
     }
+  }
+}
+
+/* -------------------------------------------
+about
+---------------------------------------------- */
+
+.about {
+  background-color: #f6f6f6;
+
+  &__inner {
+    padding: 96px 15px 26px;
+  }
+
+  &__head {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__title {
+    color: #2c2c2c;
+    font-weight: 500;
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &__subTitle {
+    color: #FF5F32;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  &__wrap {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    @include mq(u-sp){
+      margin-top: 0;
+      display: block;
+    }
+  }
+
+  &__img {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+
+    @include mq(u-sp){
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 30%;
+      -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+      position: relative;
+    }
+
+    > img {
+      @include mq(u-sp){
+        height: 300px;
+        width: auto;
+      }
+    }
+  }
+
+  &__body {
+    margin-left: -70px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 140px;
+    width: 100%;
+    z-index: 2;
+
+    @include mq(u-sp){
+      margin: auto;
+    }
+  }
+
+  &__bodyTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    line-height: calc 1.5;
+  }
+
+  &__bodyText {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 24px;
+    font-weight: 300;
   }
 }
