@@ -567,3 +567,160 @@ findStore
     }
   }
 }
+
+/* -------------------------------------------
+blog
+---------------------------------------------- */
+
+.blog {
+  &__inner {
+    padding: 96px 15px;
+  }
+
+  &__title {
+    color: #2c2c2c;
+    font-weight: 500;
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &__subTitle {
+    color: #FF5F32;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  &__wrap {
+    max-width: 976px;
+    margin: 40px auto 44px;
+  }
+
+  &__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    @include mq(u-sp){
+      display: block;
+    }
+  }
+
+  &__item {
+    width: 208px;
+    margin-bottom: 20px;
+
+    @include mq(u-sp){
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__link {
+    @include mq(u-sp){
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+
+  &__img {
+    @include mq(o-pc){
+      width: 100%;
+      height: 200px;
+      margin: 0 auto;
+    }
+
+    img {
+      border-radius: 16px;
+      width: 208px;
+      height: 208px;
+      -o-object-fit: cover;
+      object-fit: cover;
+
+      @include mq(u-sp){
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 16px;
+
+    @include mq(u-sp){
+      margin-left: 15px;
+    }
+  }
+
+  &__infoTitle {
+    font-size: 1.6rem;
+    line-height: calc( 24 / 16 );
+    color: #2c2c2c;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  &__date {
+    margin-top: 8px;
+    color: #989898;
+    font-size: 1.2rem;
+    line-height: calc 1.58333;
+  }
+
+  &__more {
+    text-align: center;
+  }
+
+  &__moreLink {
+    background-color: #fff;
+    border: 1px solid #FF5F32;
+    color: #FF5F32;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    padding: 16px 0;
+    width: 420px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: url(../../../images/common/arrow_orange.svg) no-repeat;
+      width: 8px;
+      height: 14px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include mq(u-sp){
+      width: 100%;
+    }
+  }
+}

@@ -1289,6 +1289,156 @@ findStore
   }
 }
 
+/* -------------------------------------------
+blog
+---------------------------------------------- */
+.blog__inner {
+  padding: 96px 15px;
+}
+
+.blog__title {
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 3.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.blog__subTitle {
+  color: #FF5F32;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.blog__wrap {
+  max-width: 976px;
+  margin: 40px auto 44px;
+}
+
+.blog__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media print, screen and (max-width: 767px) {
+  .blog__list {
+    display: block;
+  }
+}
+
+.blog__item {
+  width: 208px;
+  margin-bottom: 20px;
+}
+
+@media print, screen and (max-width: 767px) {
+  .blog__item {
+    width: 100%;
+  }
+}
+
+.blog__item:hover {
+  opacity: 0.5;
+}
+
+@media print, screen and (max-width: 767px) {
+  .blog__link {
+    display: flex;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .blog__img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+.blog__img img {
+  border-radius: 16px;
+  width: 208px;
+  height: 208px;
+  object-fit: cover;
+}
+
+@media print, screen and (max-width: 767px) {
+  .blog__img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.blog__info {
+  margin-top: 16px;
+}
+
+@media print, screen and (max-width: 767px) {
+  .blog__info {
+    margin-left: 15px;
+  }
+}
+
+.blog__infoTitle {
+  font-size: 1.6rem;
+  line-height: calc( 24 / 16);
+  color: #2c2c2c;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.blog__date {
+  margin-top: 8px;
+  color: #989898;
+  font-size: 1.2rem;
+  line-height: calc 1.58333;
+}
+
+.blog__more {
+  text-align: center;
+}
+
+.blog__moreLink {
+  background-color: #fff;
+  border: 1px solid #FF5F32;
+  color: #FF5F32;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  padding: 16px 0;
+  width: 420px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.blog__moreLink::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  background: url(../../../images/common/arrow_orange.svg) no-repeat;
+  width: 8px;
+  height: 14px;
+}
+
+.blog__moreLink:hover {
+  opacity: 0.5;
+}
+
+@media print, screen and (max-width: 767px) {
+  .blog__moreLink {
+    width: 100%;
+  }
+}
+
 .u-hidden {
   display: none !important;
 }
