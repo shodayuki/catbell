@@ -733,7 +733,7 @@ footer
 mainVisual
 ---------------------------------------------- */
 .mainVisual__bgImg {
-  background: url(../../../images/home/mv.png) no-repeat;
+  background: url("../images/home/mv.png") no-repeat;
   background-size: contain;
   background-position: 370px 0;
   height: 655px;
@@ -1052,7 +1052,7 @@ findPet
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
-  background: url(../../../images/common/arrow_orange.svg) no-repeat;
+  background: url(../images/common/arrow_orange.svg) no-repeat;
   width: 8px;
   height: 14px;
 }
@@ -1274,7 +1274,7 @@ findStore
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
-  background: url(../../../images/common/arrow_orange.svg) no-repeat;
+  background: url(../images/common/arrow_orange.svg) no-repeat;
   width: 8px;
   height: 14px;
 }
@@ -1424,7 +1424,7 @@ blog
   top: 50%;
   right: 24px;
   transform: translateY(-50%);
-  background: url(../../../images/common/arrow_orange.svg) no-repeat;
+  background: url(../images/common/arrow_orange.svg) no-repeat;
   width: 8px;
   height: 14px;
 }

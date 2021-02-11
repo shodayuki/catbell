@@ -11,7 +11,7 @@ mainVisual
 
 .mainVisual {
   &__bgImg {
-    background: url(../../../images/home/mv.png) no-repeat;
+    background: url("../images/home/mv.png") no-repeat;
     background-size: contain;
     background-position: 370px 0;
     height: 655px;
@@ -318,7 +318,7 @@ findPet
       right: 24px;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
-      background: url(../../../images/common/arrow_orange.svg) no-repeat;
+      background: url(../images/common/arrow_orange.svg) no-repeat;
       width: 8px;
       height: 14px;
     }
@@ -553,7 +553,7 @@ findStore
       right: 24px;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
-      background: url(../../../images/common/arrow_orange.svg) no-repeat;
+      background: url(../images/common/arrow_orange.svg) no-repeat;
       width: 8px;
       height: 14px;
     }
@@ -710,7 +710,7 @@ blog
       right: 24px;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
-      background: url(../../../images/common/arrow_orange.svg) no-repeat;
+      background: url(../images/common/arrow_orange.svg) no-repeat;
       width: 8px;
       height: 14px;
     }
